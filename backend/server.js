@@ -21,8 +21,8 @@ connection.once("open", () => {
 });
 
 //•••ROUTES•••
-const exercisesRouter = reqiure("./routes/exercises");
-const userRouter = require("./routes/users");
+const exercisesRouter = require("./routes/exercises")
+const userRouter = require("./routes/users")
 app.use("/exercises", exercisesRouter);
 app.use("/users", userRouter);
 
