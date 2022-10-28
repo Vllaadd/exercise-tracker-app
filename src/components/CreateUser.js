@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 
 export default class CreateUser extends Component{
-    component(props){
-        super()
+    constructor(props){
+        super(props)
 
         this.state = {
-            
+
         }
     }
     render(){
