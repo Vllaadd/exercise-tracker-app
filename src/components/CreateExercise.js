@@ -11,7 +11,7 @@ export default class CreateExercise extends Component {
         this.onChangeDescription = this.onChangeDescription.bind(this);
         this.onChangeDuration = this.onChangeDuration.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
-        this.onSubmit = this.onSumbit.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
 //•••DECLARING VARIABLES•••
         this.state = {
             username: "",
@@ -81,7 +81,7 @@ export default class CreateExercise extends Component {
                             value={this.state.username}
                             onChange={this.onChangeUsername}>
                             {
-                                this.state.username.map(function (user) {
+                                this.state.users.map(function (user) {
                                     return <option
                                         key={user}
                                         value={user}>{user}
